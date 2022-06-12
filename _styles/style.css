@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  width: 100%;
+  background-color: #000000;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+nav #name-logo {
+  color: #54ab89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 10px;
+  font-size: 1.3rem;
+}
+
+nav ul {
+  list-style-type: none;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#about-me {
+  display: flex;
+  height: 100vh;
+  padding: 70px 20px 0 20px;
+}
+
+#about-me #my-intro {
+  flex-basis: 0;
+  flex-grow: 2;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#about-me #my-picture {
+  display: flex;
+  justify-content: center;
+  flex-basis: 0;
+  flex-grow: 2;
+}
+
+#about-me #my-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.anchor-fix {
+  margin: 30px 0 0 0;
+}
+
+#project-works {
+  padding: 50px 20px 0 20px;
+}
+
+#project-works .section-header {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#project-works .section-header a {
+  text-decoration: none;
+  color: #54ab89;
+  background-color: #000000;
+  padding: 8px 16px;
+  border-radius: 8rem;
+}
+
+#project-works #project-work-cards {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#project-works #project-work-cards .card {
+  width: 300px;
+  height: 350px;
+  border: 1px solid;
+  border-radius: 8px;
+  box-shadow: 4px 4px #dedede;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+}
+
+#project-works #project-work-cards .card .preview {
+  width: 280px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 0 5px;
+}
+
+#project-works #project-work-cards .card .preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 8px;
+}
+
+#project-works #project-work-cards .card .project-work-name {
+  margin: 10px 0 0 0;
+  padding: 8px 16px;
+  border-radius: 8px 8px 0 0;
+  background-color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#project-works #project-work-cards .card .description {
+  margin: 10px 0 0 0;
+  font-style: italic;
+  padding: 0 5px;
+}
+
+#project-works #project-work-cards .card .github {
+  background-color: #000000;
+  color: #ffffff;
+  width: 280px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  padding: 8px 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
+}
+
+#project-works #project-work-cards .card .github a {
+  text-decoration: none;
+  color: #54ab89;
+}
+
+hr {
+  margin: 30px 0 0 0;
+  border-style: ridge;
+}
+
+footer {
+  padding: 20px 0 0 0;
+  height: 10vh;
+  position: relative;
+}
+
+footer .section-header {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+footer #connect {
+  margin: 20px 0 0 0;
+}
+
+footer div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+footer div:nth-child(2) .connect-media {
+  margin: 0 20px 20px 0;
+}
+
+footer i {
+  font-size: 3rem;
+  color: #000000;
+}
+
+footer #copyright-info {
+  text-align: center;
+  background-color: #000000;
+  color: #54ab89;
+  padding: 10px;
+}
+
+@media (max-width: 756px) {
+  #about-me {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  #about-me #my-intro {
+    font-size: 1.7rem;
+  }
+  #about-me #my-picture img {
+    width: 100%;
+    object-fit: cover;
+  }
+  #project-work-cards {
+    flex-direction: column;
+  }
+  #project-work-cards .card {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  #about-me {
+    height: 121vh;
+  }
+}

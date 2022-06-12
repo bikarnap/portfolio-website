@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../_scss/style.scss"
+	],
+	"sourcesContent": [
+		"* {\n  margin: 0;\n  padding: 0;\n}\nnav {\n  ul {\n    list-style-type: none;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    height: 50px;\n    width: 100%;\n    background-color: #dedede;\n    position: fixed;\n    left: 0;\n    top: 0;\n  }\n\n  li {\n    margin: 10px;\n    padding: 5px 5px;\n  }\n\n  li:hover {\n    background-color: #eeeeee;\n  }\n\n  a {\n    text-decoration: none;\n    color: #000000;\n  }\n\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;;AACD,AACE,GADC,CACD,EAAE,CAAC;EACD,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,QAAQ;EACzB,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,OAAO;EACzB,QAAQ,EAAE,KAAK;EACf,IAAI,EAAE,CAAC;EACP,GAAG,EAAE,CAAC;CACP;;;AAZH,AAcE,GAdC,CAcD,EAAE,CAAC;EACD,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,OAAO;CACjB;;;AAjBH,AAmBE,GAnBC,CAmBD,EAAE,AAAA,MAAM,CAAC;EACP,gBAAgB,EAAE,OAAO;CAC1B;;;AArBH,AAuBE,GAvBC,CAuBD,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,OAAO;CACf"
+}
